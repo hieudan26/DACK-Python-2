@@ -68,7 +68,7 @@ class ShowBill():
 
     def OnDoubleClick(self, event = "doubleClick"):
         x = self.tree2.item(self.tree2.selection()[0],"values")
-        DSPrice ={"Trà Sữa Sô-cô-la": 30000,"Thạch rau câu": 5000,"Thạch Thủy Tinh": 5000,"Trân châu đen": 5000,"Trân châu trắng": 5000,"Trân châu hoàng kim": 5000,"Plan": 5000,"Nước Ngọt" : 15000,"Trà Sữa Thái Xanh" : 30000,"Chocolate Đá Xay" : 30000,"Trà Chanh" : 20000,"Cà Phê Đá": 20000,"Cà Phê Sữa" : 25000,"Nước Dừa" :25000, "Nước Cam" : 25000, "Nước Suối" : 10000}
+        DSPrice ={"Trà sữa sô-cô-la": 30000,"Thạch rau câu": 5000,"Thạch thủy tinh": 5000,"Trân châu đen": 5000,"Trân châu trắng": 5000,"Trân châu hoàng kim": 5000,"Plan": 5000,"Nước ngọt" : 15000,"Trà sữa thái xanh" : 30000,"Chocolate đá xay" : 30000,"Trà chanh" : 20000,"Cà phê đá": 20000,"Cà phê sữa" : 25000,"Nước dừa" :25000, "Nước cam" : 25000, "Nước suối" : 10000}
         messagebox.showinfo("Giá trị", str(x[1]) +" " +str(x[0]).strip()+ " có giá là: " +str(float(DSPrice[str(x[0]).strip()]) * int(x[1]))+" VNĐ",parent = self.rootShow)
     def OnDoubleClick2(self, event = "doubleClick"):
         x = self.tree.item(self.tree.selection()[0],"values")

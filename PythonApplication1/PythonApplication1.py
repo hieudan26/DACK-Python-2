@@ -21,7 +21,7 @@ sift = "sang"
 bonus = 0
 count = 0
 
-crud = CRUD()
+#crud = CRUD()
 #form = ShowForm("SELECT * FROM NhanVien")
 #crud.addstaff(id,name,birthyear,gender,rank,salary,sift,bonus,count)
 #crud.deletestaff(19110345)
@@ -35,7 +35,7 @@ crud = CRUD()
 
 
 #=======Form Nhan Vien
-frm = ManageMenu()
+#frm = ManageMenu()
 #frm.display()
 
 

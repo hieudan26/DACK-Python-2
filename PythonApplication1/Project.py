@@ -72,42 +72,41 @@ class ManageMenu(object):
 		self.DateofOrder.set(time.strftime("%d/%m/%y"))
 
 
-		self.varPlan = tk.IntVar()
-		self.varTranChauDen = tk.IntVar()
-		self.varTranChauTrang = tk.IntVar()
-		self.varTranChauHoangKim = tk.IntVar()
-		self.varThachRauCau = tk.IntVar()
-		self.varThachThuyTinh = tk.IntVar()
-		self.varTraChan = tk.IntVar()
-		self.varNuocDua = tk.IntVar()
-		self.varCaPheDa = tk.IntVar()
-		self.varNuocCam = tk.IntVar()
-		self.varNuocSuoi = tk.IntVar()
-		self.varChocolateDaXay = tk.IntVar()
-		self.varTraSuaSocola = tk.IntVar()
-		self.varTraSuaThai = tk.IntVar()
-		self.varCaPheSua = IntVar()
-		self.varNuocNgot = tk.IntVar()
-		self.varTranChauDen = tk.IntVar()
+		self.cPlan = tk.IntVar()
+		self.cTranChauDen = tk.IntVar()
+		self.cTranChauTrang = tk.IntVar()
+		self.cTranChauHoangKim = tk.IntVar()
+		self.cThachRauCau = tk.IntVar()
+		self.cThachThuyTinh = tk.IntVar()
+		self.cTraChan = tk.IntVar()
+		self.cNuocDua = tk.IntVar()
+		self.cCaPheDa = tk.IntVar()
+		self.cNuocCam = tk.IntVar()
+		self.cNuocSuoi = tk.IntVar()
+		self.cChocolateDaXay = tk.IntVar()
+		self.cTraSuaSocola = tk.IntVar()
+		self.cTraSuaThai = tk.IntVar()
+		self.cCaPheSua = IntVar()
+		self.cNuocNgot = tk.IntVar()
 
 
-		self.varPlan.set(0)
-		self.varTranChauDen.set(0)
-		self.varTranChauTrang.set(0)
-		self.varTranChauHoangKim.set(0)
-		self.varThachRauCau.set(0)
-		self.varThachThuyTinh.set(0)
-		self.varTraChan.set(0)
-		self.varNuocDua.set(0)
-		self.varCaPheDa.set(0)
-		self.varNuocCam.set(0)
-		self.varNuocSuoi.set(0)
-		self.varChocolateDaXay.set(0)
-		self.varTraSuaSocola.set(0)
-		self.varTraSuaThai.set(0)
-		self.varCaPheSua.set(0)
-		self.varNuocNgot.set(0)
-		self.varTranChauDen.set(0)
+
+		self.cPlan.set(0)
+		self.cTranChauDen.set(0)
+		self.cTranChauTrang.set(0)
+		self.cTranChauHoangKim.set(0)
+		self.cThachRauCau.set(0)
+		self.cThachThuyTinh.set(0)
+		self.cTraChan.set(0)
+		self.cNuocDua.set(0)
+		self.cCaPheDa.set(0)
+		self.cNuocCam.set(0)
+		self.cNuocSuoi.set(0)
+		self.cChocolateDaXay.set(0)
+		self.cTraSuaSocola.set(0)
+		self.cTraSuaThai.set(0)
+		self.cCaPheSua.set(0)
+		self.cNuocNgot.set(0)
 
 
 		#====================================BOTTOM FRAME : FRAME 2 TOP FRAME VARIABLES==================================================
@@ -172,45 +171,45 @@ class ManageMenu(object):
 		self.lblinfo = tk.Label(self.f3right, font=('aria', 15, 'bold'), text="______", fg="#7BED9F", anchor=W, bg = '#7BED9F')
 		self.lblinfo.grid(row=4, column=0)
 
-		self.lblinfo = tk.Label(self.f3left, font=('aria', 15, 'bold'), text="Trà Chanh", fg="steel blue", anchor=W, bg = '#7BED9F')
+		self.lblinfo = tk.Label(self.f3left, font=('aria', 15, 'bold'), text="Trà chanh", fg="steel blue", anchor=W, bg = '#7BED9F')
 		self.lblinfo.grid(row = 3, column = 0)
 		self.lblinfo = tk.Label(self.f3right, font=('aria', 15, 'bold'), text="20.000", fg="steel blue", anchor=W, bg = '#7BED9F')
 		self.lblinfo.grid(row = 5, column = 0)
-		self.lblinfo = tk.Label(self.f3left, font=('aria', 15, 'bold'), text="Cà Phê Đá", fg="steel blue", anchor=W, bg = '#7BED9F')
+		self.lblinfo = tk.Label(self.f3left, font=('aria', 15, 'bold'), text="Cà phê đá", fg="steel blue", anchor=W, bg = '#7BED9F')
 		self.lblinfo.grid(row = 4, column = 0)
 		self.lblinfo = tk.Label(self.f3right, font=('aria', 15, 'bold'), text="20.000", fg="steel blue", anchor=W, bg = '#7BED9F')
 		self.lblinfo.grid(row = 6, column = 0)
-		self.lblinfo = tk.Label(self.f3left, font=('aria', 15, 'bold'), text="Cà Phê Sữa", fg="steel blue", anchor=W, bg = '#7BED9F')
+		self.lblinfo = tk.Label(self.f3left, font=('aria', 15, 'bold'), text="Cà phê sữa", fg="steel blue", anchor=W, bg = '#7BED9F')
 		self.lblinfo.grid(row = 5, column = 0)
 		self.lblinfo = tk.Label(self.f3right, font=('aria', 15, 'bold'), text="25.000", fg="steel blue", anchor=W, bg = '#7BED9F')
 		self.lblinfo.grid(row = 7, column = 0)
 
-		self.lblinfo = tk.Label(self.f3left, font=('aria', 15, 'bold'), text="Nước Dừa", fg="steel blue", anchor=W, bg = '#7BED9F')
+		self.lblinfo = tk.Label(self.f3left, font=('aria', 15, 'bold'), text="Nước dừa", fg="steel blue", anchor=W, bg = '#7BED9F')
 		self.lblinfo.grid(row = 6, column = 0)
 		self.lblinfo = tk.Label(self.f3right, font=('aria', 15, 'bold'), text="25.000", fg="steel blue", anchor=W, bg = '#7BED9F')
 		self.lblinfo.grid(row = 8, column = 0)
-		self.lblinfo = tk.Label(self.f3left, font=('aria', 15, 'bold'), text="Nước Cam", fg="steel blue", anchor=W, bg = '#7BED9F')
+		self.lblinfo = tk.Label(self.f3left, font=('aria', 15, 'bold'), text="Nước cam", fg="steel blue", anchor=W, bg = '#7BED9F')
 		self.lblinfo.grid(row = 7, column = 0)
 		self.lblinfo = tk.Label(self.f3right, font=('aria', 15, 'bold'), text="25.000", fg="steel blue", anchor=W, bg = '#7BED9F')
 		self.lblinfo.grid(row = 9, column = 0)
-		self.lblinfo = tk.Label(self.f3left, font=('aria', 15, 'bold'), text="Nước Suối", fg="steel blue", anchor=W, bg = '#7BED9F')
+		self.lblinfo = tk.Label(self.f3left, font=('aria', 15, 'bold'), text="Nước suối", fg="steel blue", anchor=W, bg = '#7BED9F')
 		self.lblinfo.grid(row = 8, column = 0)
 		self.lblinfo = tk.Label(self.f3right, font=('aria', 15, 'bold'), text="10.000", fg="steel blue", anchor=W ,bg = '#7BED9F')
 		self.lblinfo.grid(row = 10, column = 0)
-		self.lblinfo = tk.Label(self.f3left, font=('aria', 15, 'bold'), text="Chocolate Đá Xay", fg="steel blue", anchor=W, bg = '#7BED9F')
+		self.lblinfo = tk.Label(self.f3left, font=('aria', 15, 'bold'), text="Chocolate đá xay", fg="steel blue", anchor=W, bg = '#7BED9F')
 		self.lblinfo.grid(row = 9, column = 0)
 		self.lblinfo = tk.Label(self.f3right, font=('aria', 15, 'bold'), text="30.000", fg="steel blue", anchor=W, bg = '#7BED9F')
 		self.lblinfo.grid(row = 11, column = 0)
 
-		self.lblinfo = tk.Label(self.f3left, font=('aria', 15, 'bold'), text="Trà Sữa Sô-cô-la", fg="steel blue", anchor=W, bg = '#7BED9F')
+		self.lblinfo = tk.Label(self.f3left, font=('aria', 15, 'bold'), text="Trà sữa sô-cô-la", fg="steel blue", anchor=W, bg = '#7BED9F')
 		self.lblinfo.grid(row = 10, column = 0)
 		self.lblinfo = tk.Label(self.f3right, font=('aria', 15, 'bold'), text="30.000", fg="steel blue", anchor=W, bg = '#7BED9F')
 		self.lblinfo.grid(row = 12, column = 0)
-		self.lblinfo = tk.Label(self.f3left, font=('aria', 15, 'bold'), text="Trà Sữa Thái Xanh", fg="steel blue", anchor=W, bg = '#7BED9F')
+		self.lblinfo = tk.Label(self.f3left, font=('aria', 15, 'bold'), text="Trà sữa thái xanh", fg="steel blue", anchor=W, bg = '#7BED9F')
 		self.lblinfo.grid(row = 11, column = 0)
 		self.lblinfo = tk.Label(self.f3right, font=('aria', 15, 'bold'), text="30.000", fg="steel blue", anchor=W, bg = '#7BED9F')
 		self.lblinfo.grid(row = 13, column = 0)
-		self.lblinfo = tk.Label(self.f3left, font=('aria', 15, 'bold'), text="Nuoc Ngọt", fg="steel blue", anchor=W, bg = '#7BED9F')
+		self.lblinfo = tk.Label(self.f3left, font=('aria', 15, 'bold'), text="Nuoc ngọt", fg="steel blue", anchor=W, bg = '#7BED9F')
 		self.lblinfo.grid(row = 12, column = 0)
 		self.lblinfo = tk.Label(self.f3right, font=('aria', 15, 'bold'), text="15.000", fg="steel blue", anchor=W, bg = '#7BED9F')
 		self.lblinfo.grid(row = 14, column = 0)
@@ -235,7 +234,7 @@ class ManageMenu(object):
 		self.lblinfo.grid(row = 17, column = 0)
 		self.lblinfo = tk.Label(self.f3right, font=('aria', 15, 'bold'), text="5.000", fg="steel blue", anchor=W, bg = '#7BED9F')
 		self.lblinfo.grid(row = 19, column = 0)
-		self.lblinfo = tk.Label(self.f3left, font=('aria', 15, 'bold'), text="Thạch Thủy Tinh", fg="steel blue", anchor=W, bg = '#7BED9F')
+		self.lblinfo = tk.Label(self.f3left, font=('aria', 15, 'bold'), text="Thạch thủy tinh", fg="steel blue", anchor=W, bg = '#7BED9F')
 		self.lblinfo.grid(row = 18, column = 0)
 		self.lblinfo = tk.Label(self.f3right, font=('aria', 15, 'bold'), text="5.000", fg="steel blue", anchor=W, bg = '#7BED9F')
 		self.lblinfo.grid(row = 20, column = 0)
@@ -253,32 +252,32 @@ class ManageMenu(object):
 		self.lblinfo = tk.Label(self.f2Top, font=('aria', 15, 'bold'), text="\n_____________", fg="#7BED9F", anchor=W, bg = '#7BED9F')
 		self.lblinfo.grid(row=1, column=0)
 
-		self.Plan = tk.Checkbutton(self.f2Top, text="Plan", variable=self.varPlan, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command= self.Plan_CB, bg = '#7BED9F')
+		self.Plan = tk.Checkbutton(self.f2Top, text="Plan", variable=self.cPlan, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command= self.Plan_CB, bg = '#7BED9F')
 		self.Plan.grid(row=2, column=0, sticky = W)
 		self.txtPlan = tk.Entry(self.f2Top, font=("arial", 18, 'bold'), textvariable = self.varPlan, width=4, justify="right",state=DISABLED, bg = '#7BED9F')
 		self.txtPlan.grid(row=2, column=1)
 		print("02 day ",self.varPlan.get())
-		self.TranChauDen = tk.Checkbutton(self.f2Top, text="Trân châu đen ", variable=self.varTranChauDen, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command=self.TranChauDen_CB, bg = '#7BED9F')
+		self.TranChauDen = tk.Checkbutton(self.f2Top, text="Trân châu đen ", variable=self.cTranChauDen, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command=self.TranChauDen_CB, bg = '#7BED9F')
 		self.TranChauDen.grid(row=3, column=0, sticky = W)
 		self.txtTranChauDen = tk.Entry(self.f2Top, font=("arial", 18, 'bold'), textvariable = self.varTranChauDen, width=4, justify="right",state=DISABLED, bg = '#7BED9F')
 		self.txtTranChauDen.grid(row=3, column=1)
 
-		self.TranChauTrang = tk.Checkbutton(self.f2Top, text="Trân châu trắng", variable=self.varTranChauTrang, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command=self.TranChauTrang_CB, bg = '#7BED9F')
+		self.TranChauTrang = tk.Checkbutton(self.f2Top, text="Trân châu trắng", variable=self.cTranChauTrang, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command=self.TranChauTrang_CB, bg = '#7BED9F')
 		self.TranChauTrang.grid(row=4, column=0, sticky = W)
 		self.txtTranChauTrang = tk.Entry(self.f2Top, font=("arial", 18, 'bold'), textvariable = self.varTranChauTrang, width=4, justify="right",state=DISABLED, bg = '#7BED9F')
 		self.txtTranChauTrang.grid(row=4, column=1)
 
-		self.TranChauHoangKim = tk.Checkbutton(self.f2Top, text="Trân châu hoàng kim", variable=self.varTranChauHoangKim, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command=self.TranChauHoangKim_CB, bg = '#7BED9F')
+		self.TranChauHoangKim = tk.Checkbutton(self.f2Top, text="Trân châu hoàng kim", variable=self.cTranChauHoangKim, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command=self.TranChauHoangKim_CB, bg = '#7BED9F')
 		self.TranChauHoangKim.grid(row=5, column=0, sticky = W)
 		self.txtTranChauHoangKim = tk.Entry(self.f2Top, font=("arial", 18, 'bold'), textvariable = self.varTranChauHoangKim, width=4, justify="right",state=DISABLED, bg = '#7BED9F')
 		self.txtTranChauHoangKim.grid(row=5, column=1)
 
-		self.ThachRauCau = tk.Checkbutton(self.f2Top, text="Thạch rau câu ", variable=self.varThachRauCau, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command=self.ThanhRauCau_CB, bg = '#7BED9F')
+		self.ThachRauCau = tk.Checkbutton(self.f2Top, text="Thạch rau câu ", variable=self.cThachRauCau, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command=self.ThanhRauCau_CB, bg = '#7BED9F')
 		self.ThachRauCau.grid(row=6, column=0, sticky = W)
 		self.txtThachRauCau = tk.Entry(self.f2Top, font=("arial", 18, 'bold'), textvariable = self.varThachRauCau, width=4, justify="right",state=DISABLED, bg = '#7BED9F')
 		self.txtThachRauCau.grid(row=6, column=1)
 
-		self.ThachThuyTinh = tk.Checkbutton(self.f2Top, text="Thạch thủy tinh", variable=self.varThachThuyTinh, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command=self.ThachThuyTinh_CB, bg = '#7BED9F')
+		self.ThachThuyTinh = tk.Checkbutton(self.f2Top, text="Thạch thủy tinh", variable=self.cThachThuyTinh, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command=self.ThachThuyTinh_CB, bg = '#7BED9F')
 		self.ThachThuyTinh.grid(row=7, column=0, sticky = W)
 		self.txtThachThuyTinh = tk.Entry(self.f2Top, font=("arial", 18, 'bold'),  textvariable = self.varThachThuyTinh, width=4, justify="right",state=DISABLED, bg = '#7BED9F')
 		self.txtThachThuyTinh.grid(row=7, column=1)
@@ -351,53 +350,53 @@ class ManageMenu(object):
 		self.lblinfo = tk.Label(self.f1top, font=('aria', 15, 'bold'), text="\n_____________", fg="#7BED9F", anchor=W, bg = '#7BED9F')
 		self.lblinfo.grid(row=1, column=0)
 
-		self.TraChanh = tk.Checkbutton(self.f1top, text="Trà Chanh", variable=self.varTraChan, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command= self.TraChan_CB, bg = '#7BED9F')
+		self.TraChanh = tk.Checkbutton(self.f1top, text="Trà Chanh", variable=self.cTraChan, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command= self.TraChan_CB, bg = '#7BED9F')
 		self.TraChanh.grid(row=2, column=0, sticky = W)
 		self.txtTraChanh = tk.Entry(self.f1top, font=("arial", 18, 'bold'), textvariable = self.varTraChan, width=4, justify="right",state=DISABLED, bg = '#7BED9F')
 		self.txtTraChanh.grid(row=2, column=1)
 
-		self.NuocDua = tk.Checkbutton(self.f1top, text="Nước dừa", variable=self.varNuocDua, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command=self.NuocDua_CB, bg = '#7BED9F')
+		self.NuocDua = tk.Checkbutton(self.f1top, text="Nước dừa", variable=self.cNuocDua, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command=self.NuocDua_CB, bg = '#7BED9F')
 		self.NuocDua.grid(row=3, column=0, sticky = W)
 		self.txtNuocDua = tk.Entry(self.f1top, font=("arial", 18, 'bold'), textvariable = self.varNuocDua, width=4, justify="right",state=DISABLED, bg = '#7BED9F')
 		self.txtNuocDua.grid(row=3, column=1)
 
-		self.CaPheDa = tk.Checkbutton(self.f1top, text="Cà phê đá", variable=self.varCaPheDa, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command=self.CaPheDa_CB, bg = '#7BED9F')
+		self.CaPheDa = tk.Checkbutton(self.f1top, text="Cà phê đá", variable=self.cCaPheDa, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command=self.CaPheDa_CB, bg = '#7BED9F')
 		self.CaPheDa.grid(row=4, column=0, sticky = W)
 		self.txtCaPheDa = tk.Entry(self.f1top, font=("arial", 18, 'bold'), textvariable = self.varCaPheDa, width=4, justify="right",state=DISABLED, bg = '#7BED9F')
 		self.txtCaPheDa.grid(row=4, column=1)
 
-		self.CaPheSua = tk.Checkbutton(self.f1top, text="Cà phê sữa", variable=self.varCaPheSua, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command=self.CaPheSua_CB, bg = '#7BED9F')
+		self.CaPheSua = tk.Checkbutton(self.f1top, text="Cà phê sữa", variable=self.cCaPheSua, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command=self.CaPheSua_CB, bg = '#7BED9F')
 		self.CaPheSua.grid(row=5, column=0, sticky = W)
 		self.txtCaPheSua = tk.Entry(self.f1top, font=("arial", 18, 'bold'),textvariable = self.varCaPheSua, width=4, justify="right",state=DISABLED, bg = '#7BED9F')
 		self.txtCaPheSua.grid(row=5, column=1)
 
-		self.NuocCam = tk.Checkbutton(self.f1top, text="Nước cam", variable=self.varNuocCam, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command=self.NuocCam_CB, bg = '#7BED9F')
+		self.NuocCam = tk.Checkbutton(self.f1top, text="Nước cam", variable=self.cNuocCam, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command=self.NuocCam_CB, bg = '#7BED9F')
 		self.NuocCam.grid(row=6, column=0, sticky = W)
 		self.txtNuocCam = tk.Entry(self.f1top, font=("arial", 18, 'bold'),  textvariable = self.varNuocCam, width=4, justify="right",state=DISABLED, bg = '#7BED9F')
 		self.txtNuocCam.grid(row=6, column=1)
 
-		self.NuocSuoi = tk.Checkbutton(self.f1top, text="Nước Suối", variable=self.varNuocSuoi, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command=self.NuocSuoi_CB, bg = '#7BED9F')
+		self.NuocSuoi = tk.Checkbutton(self.f1top, text="Nước Suối", variable=self.cNuocSuoi, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command=self.NuocSuoi_CB, bg = '#7BED9F')
 		self.NuocSuoi.grid(row=7, column=0, sticky = W)
 		self.txtNuocSuoi = tk.Entry(self.f1top, font=("arial", 18, 'bold'),  textvariable = self.varNuocSuoi, width=4, justify="right",state=DISABLED, bg = '#7BED9F')
 		self.txtNuocSuoi.grid(row=7, column=1)
 
 
-		self.ChocolateDaXay = tk.Checkbutton(self.f1top, text="Chocolate đá xay", variable=self.varChocolateDaXay, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command=self.ChocolaDaXay_CB, bg = '#7BED9F')
+		self.ChocolateDaXay = tk.Checkbutton(self.f1top, text="Chocolate đá xay", variable=self.cChocolateDaXay, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command=self.ChocolaDaXay_CB, bg = '#7BED9F')
 		self.ChocolateDaXay.grid(row=8, column=0, sticky = W)
 		self.txtChocolateDaXay = tk.Entry(self.f1top, font=("arial", 18, 'bold'), textvariable = self.varChocolateDaXay, width=4, justify="right",state=DISABLED, bg = '#7BED9F')
 		self.txtChocolateDaXay.grid(row=8, column=1)
 
-		self.TraSuaSocola = tk.Checkbutton(self.f1top, text="Trà sữa sô-cô-la", variable=self.varTraSuaSocola, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command=self.TraSuaSocola_CB, bg = '#7BED9F')
+		self.TraSuaSocola = tk.Checkbutton(self.f1top, text="Trà sữa sô-cô-la", variable=self.cTraSuaSocola, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command=self.TraSuaSocola_CB, bg = '#7BED9F')
 		self.TraSuaSocola.grid(row=9, column=0, sticky = W)
 		self.txtTraSuaSocola = tk.Entry(self.f1top, font=("arial", 18, 'bold'),  textvariable = self.varTraSuaSocola, width=4, justify="right",state=DISABLED, bg = '#7BED9F')
 		self.txtTraSuaSocola.grid(row=9, column=1)
 
-		self.TraSuaThai = tk.Checkbutton(self.f1top, text="Trà sữ thái xanh", variable=self.varTraSuaThai, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command=self.TraSuaThai_CB, bg = '#7BED9F')
+		self.TraSuaThai = tk.Checkbutton(self.f1top, text="Trà sữ thái xanh", variable=self.cTraSuaThai, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command=self.TraSuaThai_CB, bg = '#7BED9F')
 		self.TraSuaThai.grid(row=10, column=0, sticky = W)
 		self.txtTraSuaThai = tk.Entry(self.f1top, font=("arial", 18, 'bold'),  textvariable = self.varTraSuaThai, width=4, justify="right",state=DISABLED, bg = '#7BED9F')
 		self.txtTraSuaThai.grid(row=10, column=1)
 
-		self.NuocNgot = tk.Checkbutton(self.f1top, text="Nước ngọt các loại", variable=self.varNuocNgot, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command=self.NuocNgot_CB, bg = '#7BED9F')
+		self.NuocNgot = tk.Checkbutton(self.f1top, text="Nước ngọt các loại", variable=self.cNuocNgot, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command=self.NuocNgot_CB, bg = '#7BED9F')
 		self.NuocNgot.grid(row=11, column=0, sticky = W)
 		self.txtNuocNgot = tk.Entry(self.f1top, font=("arial", 18, 'bold'), textvariable = self.varNuocNgot, width=4, justify="right",state=DISABLED, bg = '#7BED9F')
 		self.txtNuocNgot.grid(row=11, column=1)
@@ -438,22 +437,22 @@ class ManageMenu(object):
 		self.varNuocNgot.set(0)
 
 
-		self.varPlan.set(0)
-		self.varTranChauDen.set(0)
-		self.varTranChauTrang.set(0)
-		self.varTranChauHoangKim.set(0)
-		self.varThachRauCau.set(0)
-		self.varThachThuyTinh.set(0)
-		self.varTraChan.set(0)
-		self.varNuocDua.set(0)
-		self.varCaPheDa.set(0)
-		self.varNuocCam.set(0)
-		self.varNuocSuoi.set(0)
-		self.varChocolateDaXay.set(0)
-		self.varTraSuaSocola.set(0)
-		self.varTraSuaThai.set(0)
-		self.varCaPheSua.set(0)
-		self.varNuocNgot.set(0)
+		self.cPlan.set(0)
+		self.cTranChauDen.set(0)
+		self.cTranChauTrang.set(0)
+		self.cTranChauHoangKim.set(0)
+		self.cThachRauCau.set(0)
+		self.cThachThuyTinh.set(0)
+		self.cTraChan.set(0)
+		self.cNuocDua.set(0)
+		self.cCaPheDa.set(0)
+		self.cNuocCam.set(0)
+		self.cNuocSuoi.set(0)
+		self.cChocolateDaXay.set(0)
+		self.cTraSuaSocola.set(0)
+		self.cTraSuaThai.set(0)
+		self.cCaPheSua.set(0)
+		self.cNuocNgot.set(0)
 
 		self.varPlan.set(0)
 		self.varTranChauDen.set(0)
@@ -505,7 +504,7 @@ class ManageMenu(object):
 
 		txtReceipt.insert(END, 'Receipt Ref:\t\t\t'+ self.Receipt_Ref.get() + '\t\t\t' + self.DateofOrder.get()+"\n")
 		txtReceipt.insert(END, 'Items\t\t\t\t' + "No. of Items \n\n")
-		txtReceipt.insert(END, 'Trà Chanh: \t\t\t\t\t' + self.varTraChan.get() + "\n")
+		txtReceipt.insert(END, 'Tra Chanh: \t\t\t\t\t' + self.varTraChan.get() + "\n")
 		txtReceipt.insert(END, 'Cà Phê Đá: \t\t\t\t\t' + self.varCaPheDa.get() + "\n")
 		txtReceipt.insert(END, 'Cà Phê Sữa: \t\t\t\t\t' + self.varCaPheSua.get() + "\n")
 		txtReceipt.insert(END, 'Nước Dừa: \t\t\t\t\t' + self.varNuocDua.get() + "\n")
@@ -524,34 +523,34 @@ class ManageMenu(object):
 							+"\nTotal Payble amount:\t\t" + self.varPay.get())
 		name = ''
 		if (str(self.varTraChan.get()) != '0'):
-			name = 'Trà Chanh'
+			name = 'Trà chanh'
 			self.CTbill.AddCTBill(self.Receipt_Ref.get(),name,self.varTraChan.get())
 		if (str(self.varCaPheDa.get()) != '0'):
-			name =  'Cà Phê Đá'
+			name =  'Cà phê đá'
 			self.CTbill.AddCTBill(self.Receipt_Ref.get(),name,self.varCaPheDa.get())
 		if (str(self.varCaPheSua.get()) != '0'):
-			name =  'Cà Phê Sữa'
+			name =  'Cà phê sữa'
 			self.CTbill.AddCTBill(self.Receipt_Ref.get(),name,self.varCaPheSua.get())
 		if (str(self.varNuocDua.get()) != '0'):
-			name =  'Nước Dừa'
+			name =  'Nước dừa'
 			self.CTbill.AddCTBill(self.Receipt_Ref.get(),name,self.varNuocDua.get())
 		if (str(self.varNuocCam.get()) != '0'):
-			name =  'Nước Cam'
+			name =  'Nước cam'
 			self.CTbill.AddCTBill(self.Receipt_Ref.get(),name,self.varNuocCam.get())
 		if (str(self.varNuocSuoi.get()) != '0'):
-			name =  'Nước Suối'
+			name =  'Nước suối'
 			self.CTbill.AddCTBill(self.Receipt_Ref.get(),name,self.varNuocSuoi.get())
 		if (str(self.varChocolateDaXay.get()) != '0'):
-			name =  'Chocolate Đá Xay'
+			name =  'Chocolate đá xay'
 			self.CTbill.AddCTBill(self.Receipt_Ref.get(),name,self.varChocolateDaXay.get())
 		if (str(self.varTraSuaSocola.get()) != '0'):
-			name =  'Trà Sữa Sô-cô-la'
+			name =  'Trà sữa sô-cô-la'
 			self.CTbill.AddCTBill(self.Receipt_Ref.get(),name,self.varTraSuaSocola.get())
 		if (str(self.varTraSuaThai.get()) != '0'):
-			name = 'Trà Sữa Thái Xanh'
+			name = 'Trà sữa thái xanh'
 			self.CTbill.AddCTBill(self.Receipt_Ref.get(),name,self.varTraSuaThai.get())
 		if (str(self.varNuocNgot.get()) != '0'):
-			name = 'Nước Ngọt'
+			name = 'Nước ngọt'
 			self.CTbill.AddCTBill(self.Receipt_Ref.get(),name,self.varNuocNgot.get())
 		if (str(self.varPlan.get()) != '0'):
 			name =  'Plan'
@@ -614,123 +613,123 @@ class ManageMenu(object):
 	#================================================================================
 	#                       CHECKBOX FUNCTION
 	def Plan_CB(self):
-		if self.varPlan.get() == 1:
+		if self.cPlan.get() == 1:
 			self.txtPlan.configure(state=NORMAL)
 			self.varPlan.set("1")
-		elif self.varPlan.get() == 0:
+		elif self.cPlan.get() == 0:
 			self.txtPlan.configure(state=DISABLED)
 			self.varPlan.set("0")
 	def TranChauDen_CB(self):
-		if self.varTranChauDen.get() == 1:
+		if self.cTranChauDen.get() == 1:
 			self.txtTranChauDen.configure(state=NORMAL)
 			self.varTranChauDen.set("1")
-		elif self.varTranChauDen.get() == 0:
+		elif self.cTranChauDen.get() == 0:
 			self.txtTranChauDen.configure(state=DISABLED)
 			self.varTranChauDen.set("0")
 	def TranChauTrang_CB(self):
-		if self.varTranChauTrang.get() == 1:
+		if self.cTranChauTrang.get() == 1:
 			self.txtTranChauTrang.configure(state=NORMAL)
 			self.varTranChauTrang.set("1")
-		elif self.varTranChauTrang.get() == 0:
+		elif self.cTranChauTrang.get() == 0:
 			self.txtTranChauTrang.configure(state=DISABLED)
 			self.varTranChauTrang.set("0")
 	def TranChauHoangKim_CB(self):
-		if self.varTranChauHoangKim.get() == 1:
+		if self.cTranChauHoangKim.get() == 1:
 			self.txtTranChauHoangKim.configure(state=NORMAL)
 			self.varTranChauHoangKim.set("1")
-		elif self.varTranChauHoangKim.get() == 0:
+		elif self.cTranChauHoangKim.get() == 0:
 			self.txtTranChauHoangKim.configure(state=DISABLED)
 			self.varTranChauHoangKim.set("0")
 	def ThanhRauCau_CB(self):
-		if self.varThachRauCau.get() == 1:
+		if self.cThachRauCau.get() == 1:
 			self.txtThachRauCau.configure(state=NORMAL)
 			self.varThachRauCau.set("1")
-		elif self.varThachRauCau.get() == 0:
+		elif self.cThachRauCau.get() == 0:
 			self.txtThachRauCau.configure(state=DISABLED)
 			self.varThachRauCau.set("0")
 	def ThachThuyTinh_CB(self):
-		if self.varThachThuyTinh.get() == 1:
+		if self.cThachThuyTinh.get() == 1:
 			self.txtThachThuyTinh.configure(state=NORMAL)
 			self.varThachThuyTinh.set("1")
-		elif self.varThachThuyTinh.get() == 0:
+		elif self.cThachThuyTinh.get() == 0:
 			self.txtThachThuyTinh.configure(state=DISABLED)
 			self.varThachThuyTinh.set("0")
 	def TraChan_CB(self):
-		if self.varTraChan.get() == 1:
+		if self.cTraChan.get() == 1:
 			self.txtTraChanh.configure(state=NORMAL)
 			self.varTraChan.set("1")
-		elif self.varTraChan.get() == 0:
+		elif self.cTraChan.get() == 0:
 			self.txtTraChanh.configure(state=DISABLED)
 			self.varTraChan.set("0")
 			
 	def NuocDua_CB(self):
-		if self.varNuocDua.get() == 1:
+		if self.cNuocDua.get() == 1:
 			self.txtNuocDua.configure(state=NORMAL)
 			self.varNuocDua.set("1")
-		elif self.varNuocDua.get() == 0:
+		elif self.cNuocDua.get() == 0:
 			self.txtNuocDua.configure(state=DISABLED)
 			self.varNuocDua.set("0")
 			
 	def CaPheDa_CB(self):
-		if self.varCaPheDa.get() == 1:
+		if self.cCaPheDa.get() == 1:
 			self.txtCaPheDa.configure(state=NORMAL)
 			self.varCaPheDa.set("1")
-		elif self.varCaPheDa.get() == 0:
+		elif self.cCaPheDa.get() == 0:
 			self.txtCaPheDa.configure(state=DISABLED)
 			self.varCaPheDa.set("0")
 			
 	def NuocCam_CB(self):
-		if self.varNuocCam.get() == 1:
+		if self.cNuocCam.get() == 1:
 			self.txtNuocCam.configure(state=NORMAL)
 			self.varNuocCam.set("1")
-		elif self.varNuocCam.get() == 0:
+		elif self.cNuocCam.get() == 0:
 			self.txtNuocCam.configure(state=DISABLED)
 			self.varNuocCam.set("0")
 			
 	def NuocSuoi_CB(self):
-		if self.varNuocSuoi.get() == 1:
+		if self.cNuocSuoi.get() == 1:
 			self.txtNuocSuoi.configure(state=NORMAL)
 			self.varNuocSuoi.set("1")
-		elif self.varNuocSuoi.get() == 0:
+		elif self.cNuocSuoi.get() == 0:
 			self.txtNuocSuoi.configure(state=DISABLED)
 			self.varNuocSuoi.set("0")
 			
 	def ChocolaDaXay_CB(self):
-		if self.varChocolateDaXay.get() == 1:
+		if self.cChocolateDaXay.get() == 1:
 			self.txtChocolateDaXay.configure(state=NORMAL)
 			self.varChocolateDaXay.set("1")
-		elif self.varChocolateDaXay.get() == 0:
+		elif self.cChocolateDaXay.get() == 0:
 			self.txtChocolateDaXay.configure(state=DISABLED)
 			self.varChocolateDaXay.set("0")
 			
 	def TraSuaSocola_CB(self):
-		if self.varTraSuaSocola.get() == 1:
+		if self.cTraSuaSocola.get() == 1:
 			self.txtTraSuaSocola.configure(state=NORMAL)
 			self.varTraSuaSocola.set("1")
-		elif self.varTraSuaSocola.get() == 0:
+		elif self.cTraSuaSocola.get() == 0:
 			self.txtTraSuaSocola.configure(state=DISABLED)
 			self.varTraSuaSocola.set("0")
 			
 	def TraSuaThai_CB(self):
-		if self.varTraSuaThai.get() == 1:
+		if self.cTraSuaThai.get() == 1:
 			self.txtTraSuaThai.configure(state=NORMAL)
 			self.varTraSuaThai.set("1")
-		elif self.varTraSuaThai.get() == 0:
+		elif self.cTraSuaThai.get() == 0:
 			self.txtTraSuaThai.configure(state=DISABLED)
 			self.varTraSuaThai.set("0")
 
 	def CaPheSua_CB(self):
-		if self.varCaPheSua.get() == 1:
+		if self.cCaPheSua.get() == 1:
 			self.txtCaPheSua.configure(state=NORMAL)
 			self.varCaPheSua.set("1")
-		elif self.varCaPheSua.get() == 0:
+		elif self.cCaPheSua.get() == 0:
 			self.txtCaPheSua.configure(state=DISABLED)
 			self.varCaPheSua.set("0")
 
 	def NuocNgot_CB(self):
-		if self.varNuocNgot.get() == 1:
+		if self.cNuocNgot.get() == 1:
 			self.txtNuocNgot.configure(state=NORMAL)
 			self.varNuocNgot.set("1")
-		elif self.varNuocNgot.get() == 0:
+		elif self.cNuocNgot.get() == 0:
 			self.txtNuocNgot.configure(state=DISABLED)
 			self.varNuocNgot.set("0")

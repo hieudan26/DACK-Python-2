@@ -38,7 +38,7 @@ class ShowChitietBill():
         lb_Content.pack(pady=5)
 
     def labelBill(self):
-        DSPrice ={"Trà Sữa Sô-cô-la": 30000,"Thạch rau câu": 5000,"Thạch Thủy Tinh": 5000,"Trân châu đen": 5000,"Trân châu trắng": 5000,"Trân châu hoàng kim": 5000,"Plan": 5000,"Nước Ngọt" : 15000,"Trà Sữa Thái Xanh" : 30000,"Chocolate Đá Xay" : 30000,"Trà Chanh" : 20000,"Cà Phê Đá": 20000,"Cà Phê Sữa" : 25000,"Nước Dừa" :25000, "Nước Cam" : 25000, "Nước Suối" : 10000}
+        DSPrice ={"Trà sữa sô-cô-la": 30000,"Thạch rau câu": 5000,"Thạch thủy tinh": 5000,"Trân châu đen": 5000,"Trân châu trắng": 5000,"Trân châu hoàng kim": 5000,"Plan": 5000,"Nước ngọt" : 15000,"Trà sữa thái xanh" : 30000,"Chocolate đá xay" : 30000,"Trà chanh" : 20000,"Cà phê đá": 20000,"Cà phê sữa" : 25000,"Nước dừa" :25000, "Nước cam" : 25000, "Nước suối" : 10000}
         listfood = self.crud.FoodForBill(self.IDBill)
         tt = 0
         lb_Content = tk.Label(
