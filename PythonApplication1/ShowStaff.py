@@ -127,7 +127,6 @@ class ShowForm():
                             command = self.RefreshData
                             )
         button1.place(x=20, y = 100)
-        print(self.tree.item)
     
     
     def OptionSort(self):
@@ -184,7 +183,6 @@ class ShowForm():
     def buttonChamcong(self):
         button1 = Button(self.rootShow, width = 15,text="Chấm công",command = self.ChamCong)
         button1.place(x=20, y = 440)
-        print(self.tree.item)
 #=============================Search Entry============================
     def labelID(self):
         lb_ID = Label(
@@ -205,7 +203,6 @@ class ShowForm():
     def buttonSearch(self):
         button1 = tk.Button(self.rootShow,text="TÌm kiếm NV", font = 'Times 11', width = 20, command = self.SreachByName)
         button1.place(x=1100, y = 32)
-        print(self.tree.item)
 #=================function=============
     def Delete(self):
         if(self.tree.item(self.tree.focus(),"values") != ""):

@@ -17,7 +17,7 @@ class SQLBILL():
             stringSQL = "INSERT INTO Bill values(?,?,?)"
             conn = sqlite3.connect("QlNhanVien.db")
             mydata = (time,total,id)
-            cur = conn.cursor()
+            cur = cSonn.cursor()
             cur.execute(stringSQL,mydata)
             conn.commit()
             conn.close()
@@ -35,7 +35,6 @@ class SQLBILL():
         cur.execute(sql_Query)
         rows = cur.fetchall()    
         for row in rows:
-            print(row) 
             tree.insert("", tk.END, values=row)        
         conn.close()
 
@@ -78,6 +77,7 @@ class SQLBILL():
         rows = cur.fetchall()
         conn.close()
         return rows
+
     def LaytenMonAn(self):
         stringSQL = "SELECT DISTINCT Name FROM ChiTietBill"
         conn = sqlite3.connect("QlNhanVien.db")

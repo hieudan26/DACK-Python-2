@@ -256,7 +256,7 @@ class ManageMenu(object):
 		self.Plan.grid(row=2, column=0, sticky = W)
 		self.txtPlan = tk.Entry(self.f2Top, font=("arial", 18, 'bold'), textvariable = self.varPlan, width=4, justify="right",state=DISABLED, bg = '#7BED9F')
 		self.txtPlan.grid(row=2, column=1)
-		print("02 day ",self.varPlan.get())
+
 		self.TranChauDen = tk.Checkbutton(self.f2Top, text="Trân châu đen ", variable=self.cTranChauDen, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command=self.TranChauDen_CB, bg = '#7BED9F')
 		self.TranChauDen.grid(row=3, column=0, sticky = W)
 		self.txtTranChauDen = tk.Entry(self.f2Top, font=("arial", 18, 'bold'), textvariable = self.varTranChauDen, width=4, justify="right",state=DISABLED, bg = '#7BED9F')
@@ -391,7 +391,7 @@ class ManageMenu(object):
 		self.txtTraSuaSocola = tk.Entry(self.f1top, font=("arial", 18, 'bold'),  textvariable = self.varTraSuaSocola, width=4, justify="right",state=DISABLED, bg = '#7BED9F')
 		self.txtTraSuaSocola.grid(row=9, column=1)
 
-		self.TraSuaThai = tk.Checkbutton(self.f1top, text="Trà sữ thái xanh", variable=self.cTraSuaThai, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command=self.TraSuaThai_CB, bg = '#7BED9F')
+		self.TraSuaThai = tk.Checkbutton(self.f1top, text="Trà sữa thái xanh", variable=self.cTraSuaThai, onvalue=1, offvalue=0, font=("arial", 18, 'bold'), command=self.TraSuaThai_CB, bg = '#7BED9F')
 		self.TraSuaThai.grid(row=10, column=0, sticky = W)
 		self.txtTraSuaThai = tk.Entry(self.f1top, font=("arial", 18, 'bold'),  textvariable = self.varTraSuaThai, width=4, justify="right",state=DISABLED, bg = '#7BED9F')
 		self.txtTraSuaThai.grid(row=10, column=1)

@@ -310,7 +310,6 @@ class AddForm(object):
             return True
 
     def checkTT(self):
-        print(self.id.get() == 0, self.name.get() == "" , self.birthyear.get() == 0 , self.rank.get() == "" , self.salary.get() == 0 , self.sift.get() == "")
         if(self.id.get() == 0 or self.name.get() == "" or self.birthyear.get() == 0 or self.rank.get() == "" or self.salary.get() == 0 or self.sift.get() == ""):
             return False
         else:
@@ -324,9 +323,7 @@ class AddForm(object):
 #=======================function===========================================
     def SetGender(self,value):
         self.gender.set(value)
-        print(self.gender.get())
     def SetRank(self,value):
         self.rank.set(value)
-        print(self.rank.get())
    
 #==================================================================

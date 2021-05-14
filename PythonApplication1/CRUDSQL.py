@@ -19,9 +19,8 @@ class CRUD():
         conn = sqlite3.connect("QlNhanVien.db")
         cur = conn.cursor()
         cur.execute(sql_Query)
-        rows = cur.fetchall()    
+        rows = cur.fetchall()    #Lấy các hàng từ bảng dữ liệu
         for row in rows:
-            print(row) 
             tree.insert("", tk.END, values=row)        
         conn.close()
 
@@ -80,8 +79,10 @@ class CRUD():
         cur = conn.cursor()
         cur.execute(sql_Query)
         rows = cur.fetchall()
+        print(rows)
         conn.close()
         out = [item for t in rows for item in t]
+        print(out)
         return out
 ##===================================================================================
 ##=====================GetID NhanVien ===============================

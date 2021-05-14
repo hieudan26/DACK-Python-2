@@ -371,10 +371,8 @@ class EditForm(object):
             return True
 #=======================function===========================================
     def SetGender(self,value):
-        print(value)
         self.gender.set(value) 
     def SetRank(self,value):
-        print(value)
         self.rank.set(value) 
    
 #==================================================================
