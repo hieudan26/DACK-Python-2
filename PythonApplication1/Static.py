@@ -1,13 +1,6 @@
 from os import environ
-import calendar
-import numpy as np
 import matplotlib as mpl 
 import matplotlib.pyplot as plt
-from tkinter import *
-from tkinter import messagebox
-import tkinter as tk
-from tkinter import ttk
-import sqlite3
 from SQLBill import *
 from matplotlib import colors as mcolors
 

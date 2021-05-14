@@ -210,9 +210,10 @@ class ShowBill():
         if(value == OPTIONS[0]):
             self.SortName()
         if(value == OPTIONS[1]):
-            self.SortValue()
-        if(value == OPTIONS[2]):
             self.SortValueReverse()
+        if(value == OPTIONS[2]):
+            self.SortValue()
+
     def SortName(self):
         self.crud.View(self.tree2,"SELECT  ChiTietBill.name , sum(SoLuong) as SoLuong from ChiTietBill GROUP BY Name  ORDER BY name ASC")
     def SortValue(self):

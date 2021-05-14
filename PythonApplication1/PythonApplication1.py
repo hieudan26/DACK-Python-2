@@ -11,15 +11,6 @@ from class1 import *
 
 
 
-id = 19110344
-name="Nguyen Le Hoang Ha"
-birthyear = 2999
-gender ="Nam"
-rank = "Xuât nhập kho"
-salary = 10000
-sift = "sang"
-bonus = 0
-count = 0
 
 #crud = CRUD()
 #form = ShowForm("SELECT * FROM NhanVien")

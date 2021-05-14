@@ -79,10 +79,8 @@ class CRUD():
         cur = conn.cursor()
         cur.execute(sql_Query)
         rows = cur.fetchall()
-        print(rows)
         conn.close()
         out = [item for t in rows for item in t]
-        print(out)
         return out
 ##===================================================================================
 ##=====================GetID NhanVien ===============================

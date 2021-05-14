@@ -17,7 +17,7 @@ class SQLBILL():
             stringSQL = "INSERT INTO Bill values(?,?,?)"
             conn = sqlite3.connect("QlNhanVien.db")
             mydata = (time,total,id)
-            cur = cSonn.cursor()
+            cur = conn.cursor()
             cur.execute(stringSQL,mydata)
             conn.commit()
             conn.close()

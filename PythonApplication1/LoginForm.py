@@ -146,7 +146,6 @@ class LoginForm():
             username = self.userName_TextBox.get()
             password = self.passWord_TextBox.get()
             dt = mdb.getData("Select * from login where username = '"+ username + "' and password = '"+ password + "'")
-            messagebox.showinfo("Login","Select * from login where username = '"+ username + "' and password = '"+ password + "'" )
 
             if len(dt) != 0:
                 self.OpenWordForm(dt[0][0]);
@@ -155,15 +154,15 @@ class LoginForm():
     def OpenWordForm(self,id):
         mdb = mydb()
         dt = mdb.getData("SELECT Chucvu, tennhanvien FROM login, NhanVien  where login.id = NhanVien.IDnhanvien and id = " + str(id))
-        if dt[0][0] == 'Quản Lý':
+        if len(dt)!=0 and dt[0][0] == 'Quản Lý':
             messagebox.showinfo("Login","Đăng nhập quản lý thành công")
             frmQuanLy = FormQuanLy()
             self.LoginForm.destroy()
             frmQuanLy.setupForm()
-        elif dt[0][0] =='Nhân Viên':
-            self.setupFormNhanVien(dt[0][1])
+        else:
+            self.setupFormNhanVien()
 
-    def setupFormNhanVien(self,name):
+    def setupFormNhanVien(self):
         self.passWord_TextBox.delete(0, len(self.passWord_TextBox.get()))
         self.userName_TextBox.delete(0, len(self.userName_TextBox.get()))
         self.LoginForm.destroy()
